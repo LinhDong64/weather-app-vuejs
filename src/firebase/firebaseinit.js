@@ -3,12 +3,12 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB_K3EEvVg3l5BHHUF5XA1-UMvgO9Ddgbw",
-  authDomain: "weatherappvuejs-c2c17.firebaseapp.com",
-  projectId: "weatherappvuejs-c2c17",
-  storageBucket: "weatherappvuejs-c2c17.appspot.com",
-  messagingSenderId: "537701487410",
-  appId: "1:537701487410:web:5957e8b78798869acb7d2b"
+  apiKey: process.env.VUE_APP_FIRE_BASE_API_KEY,
+  authDomain: process.env.VUE_APP_FIRE_BASE_AUTH_DOMAIN,
+  projectId: process.env.VUE_APP_FIRE_BASE_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_FIRE_BASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_FIRE_BASE_MESSAGING_SENDER_ID,
+  appId: process.env.VUE_APP_FIRE_BASE_APP_ID
 };
 
 // Initialize Firebase
